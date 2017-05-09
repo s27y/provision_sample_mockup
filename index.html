@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     
   </head>
 
@@ -52,11 +52,111 @@
     </nav>
 
     <div class="container-fluid">
+      <div class="row">
+        <div id="side_bar" class="col-3">
+          <h2>Side Bar</h2>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+              </span>
+            </div><!-- /input-group -->
+<div id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne">
+      <h5 class="mb-0">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Fleet Group 01
+        </a>
+      </h5>
+    </div>
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+        <ul class="list-group">
+  <li class="list-group-item">vehicle 01</li>
+  <li class="list-group-item">vehicle 02</li>
+  <li class="list-group-item">vehicle 03</li>
+  <li class="list-group-item">vehicle 04</li>
+  <li class="list-group-item">vehicle 05</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingTwo">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Fleet Group 02
+        </a>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+
+        <ul class="list-group">
+  <li class="list-group-item">vehicle 01</li>
+  <li class="list-group-item">vehicle 02</li>
+  <li class="list-group-item">vehicle 03</li>
+  <li class="list-group-item">vehicle 04</li>
+  <li class="list-group-item">vehicle 05</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingThree">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Fleet Group 03
+        </a>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+
+        <ul class="list-group">
+  <li class="list-group-item">vehicle 01</li>
+  <li class="list-group-item">vehicle 02</li>
+  <li class="list-group-item">vehicle 03</li>
+  <li class="list-group-item">vehicle 04</li>
+  <li class="list-group-item">vehicle 05</li>
+</ul>
+
+    </div>
+  </div>
+</div>
+            
+        </div><!--  /#side_bar -->
+        <div id="main_content" class="col-8">
+        <div class="row">
+          <div id="behaviour_statistics" class="statistics col-md-4">
+            <h2>BEHAVIOUR</h2>
+            <div class="statistics_chart">
+            </div>
+            <div class="statistics_sidebar">
+            </div>
+          </div>
+          <div id="performance_statistics" class="statistics col-md-4">
+            <h2>PERFORMANCE</h2>
+            <div class="statistics_chart">
+            </div>
+            <div class="statistics_sidebar">
+            </div>
+          </div>
+          <div id="status_statistics" class="statistics col-md-4">
+            <h2>STATUS</h2>
+            <div class="statistics_chart">
+            </div>
+            <div class="statistics_sidebar">
+            </div>
+          </div>
+          <div id="google_map_view" class="statistics col-md-4">
+            <h2>MAP VIEW</h2>
+            <div class="map">
+            </div>
+          </div>
+        </div> <!-- END row-->
+        </div><!-- END .main_content -->
       </div>
+
 
     </div><!-- /.container -->
 
